@@ -1,4 +1,4 @@
-FeatureScript ; /** without versions **/ /* Automatically generated version */
+FeatureScript ; /* Automatically generated version */
 import(path : "onshape/std/booleanoperationtype.gen.fs", version : "");
 import(path : "onshape/std/boundingtype.gen.fs", version : "");
 import(path : "onshape/std/containers.fs", version : "");

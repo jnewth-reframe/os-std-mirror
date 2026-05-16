@@ -1,4 +1,4 @@
-FeatureScript ; /** without versions **/ /* Automatically generated version */
+FeatureScript ; /* Automatically generated version */
 // Imports used in interface
 export import(path : "onshape/std/facecurvecreationtype.gen.fs", version : "");
 

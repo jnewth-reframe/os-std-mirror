@@ -1,4 +1,4 @@
-FeatureScript ; /** without versions **/ /* Automatically generated version */
+FeatureScript ; /* Automatically generated version */
 // This module is part of the FeatureScript Standard Library and is distributed under the MIT License.
 // See the LICENSE tab for the license text.
 // Copyright (c) 2013-Present PTC Inc.
@@ -508,6 +508,32 @@ export function addDebugArrow(context is Context, from is Vector, to is Vector, 
 export function addDebugArrow(context is Context, from is Vector, to is Vector, radius is ValueWithUnits)
 {
     addDebugArrow(context, from, to, radius, DebugColor.RED);
+}
+
+/**
+ * Adds a reference auto scaling coordinate system frame for visualization similar to triad manipulator
+ * The frame will be displayed with axes showing the specified coordinate system.
+ *
+ * @param context : @autocomplete `context`
+ * @param id : @autocomplete `id + "referenceFrame"`
+ * @param origin : The origin point of the coordinate system
+ * @param xAxisDir : The direction of the X axis (will be normalized)
+ * @param zAxisDir : The direction of the Z axis (will be normalized)
+ */
+export function addReferenceCSysFrame(context is Context, id is Id, origin is Vector, xAxisDir is Vector, zAxisDir is Vector)
+precondition
+{
+    is3dLengthVector(origin);
+    is3dDirection(xAxisDir);
+    is3dDirection(zAxisDir);
+    abs(dot(xAxisDir, zAxisDir)) < TOLERANCE.zeroAngle;
+}
+{
+    @addReferenceCSysFrame(context, id, {
+        "origin" : origin,
+        "xAxisDir" : xAxisDir,
+        "zAxisDir" : zAxisDir
+    });
 }
 
 // Timers for very basic profiling

@@ -1,4 +1,4 @@
-FeatureScript ; /** without versions **/ /* Automatically generated version */
+FeatureScript ; /* Automatically generated version */
 // This module is part of the FeatureScript Standard Library and is distributed under the MIT License.
 // See the LICENSE tab for the license text.
 // Copyright (c) 2013-Present PTC Inc.
@@ -1189,12 +1189,12 @@ precondition
  *
  * Returns a ToleranceInfo of the given parameter id if it exists.
  */
-export function getParameterToleranceInfo(context is Context, definition is map) returns ToleranceInfo
+export function getParameterToleranceInfo(context is Context, id is Id, definition is map) returns ToleranceInfo
 precondition
 {
     definition.parameterId is string;
     definition.isAngle is undefined || definition.isAngle is boolean;
 }
 {
-    return @getParameterToleranceInfo(context, definition);
+    return @getParameterToleranceInfo(context, id, definition);
 }

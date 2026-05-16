@@ -1,4 +1,4 @@
-FeatureScript ; /** without versions **/ /* Automatically generated version */
+FeatureScript ; /* Automatically generated version */
 /* Automatically generated file -- DO NOT EDIT */
 
 import(path : "onshape/std/units.fs", version : "");

@@ -1,4 +1,4 @@
-FeatureScript ; /** without versions **/ /* Automatically generated version */
+FeatureScript ; /* Automatically generated version */
 // This module is part of the FeatureScript Standard Library and is distributed under the MIT License.
 // See the LICENSE tab for the license text.
 // Copyright (c) 2013-Present PTC Inc.
@@ -633,7 +633,8 @@ export function surfaceOperationTypeEditLogic(context is Context, id is Id, defi
 {
     if (!specifiedParameters.surfaceOperationType)
     {
-        var joinableEdges = evaluateQuery(context, filterJoinableSurfaceEdges(inputEdges));
+        var joinableEdgesQ = qModifiableEntityFilter(filterJoinableSurfaceEdges(inputEdges));
+        var joinableEdges = evaluateQuery(context, joinableEdgesQ);
         var anyJoinable = size(joinableEdges) > 0;
         if (!anyJoinable)
         {
@@ -649,8 +650,8 @@ export function surfaceOperationTypeEditLogic(context is Context, id is Id, defi
 
             for (var i = 0; i < size(otherEdges); i += 1)
             {
-                var siblingEdges = getJoinableSurfaceEdgeFromParentEdge(context, id, otherEdges[i], identityTransform());
-                if (!isQueryEmpty(context, qSubtraction(siblingEdges, qOwnedByBody(hiddenBodies, EntityType.EDGE))))
+                var siblingEdgesQ = qModifiableEntityFilter(getJoinableSurfaceEdgeFromParentEdge(context, id, otherEdges[i], identityTransform()));
+                if (!isQueryEmpty(context, qSubtraction(siblingEdgesQ, qOwnedByBody(hiddenBodies, EntityType.EDGE))))
                 {
                     anyJoinable = true;
                     break;

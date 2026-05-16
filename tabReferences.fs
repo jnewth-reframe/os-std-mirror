@@ -1,4 +1,4 @@
-FeatureScript ; /** without versions **/ /* Automatically generated version */
+FeatureScript ; /* Automatically generated version */
 export import(path : "onshape/std/partstudioitemtype.gen.fs", version : "");
 
 import(path : "onshape/std/query.fs", version : "");

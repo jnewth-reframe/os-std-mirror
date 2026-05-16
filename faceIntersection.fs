@@ -1,4 +1,4 @@
-FeatureScript ; /** without versions **/ /* Automatically generated version */
+FeatureScript ; /* Automatically generated version */
 import(path : "onshape/std/feature.fs", version : "");
 import(path : "onshape/std/approximationUtils.fs", version : "");
 
