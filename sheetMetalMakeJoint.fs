@@ -4,7 +4,7 @@ FeatureScript ; /* Automatically generated version */
 // Copyright (c) 2013-Present PTC Inc.
 
 export import(path : "onshape/std/smjointstyle.gen.fs", version : "");
-export import(path: "onshape/std/smjointtype.gen.fs", version: "2960.0");
+export import(path: "onshape/std/smjointtype.gen.fs", version: "2985.0");
 
 import(path : "onshape/std/attributes.fs", version : "");
 import(path : "onshape/std/boolean.fs", version : "");
