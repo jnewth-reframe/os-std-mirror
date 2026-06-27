@@ -5,7 +5,7 @@ FeatureScript ; /* Automatically generated version */
 
 import(path : "onshape/std/feature.fs", version : "");
 import(path : "onshape/std/valueBounds.fs", version : "");
-import(path : "onshape/std/units.fs", version: "2985.0");
+import(path : "onshape/std/units.fs", version : "");
 import(path : "onshape/std/tabReferences.fs", version : "");
 
 /**

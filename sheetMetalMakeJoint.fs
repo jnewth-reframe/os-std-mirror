@@ -4,7 +4,7 @@ FeatureScript ; /* Automatically generated version */
 // Copyright (c) 2013-Present PTC Inc.
 
 export import(path : "onshape/std/smjointstyle.gen.fs", version : "");
-export import(path: "onshape/std/smjointtype.gen.fs", version: "2985.0");
+export import(path: "onshape/std/smjointtype.gen.fs", version : "");
 
 import(path : "onshape/std/attributes.fs", version : "");
 import(path : "onshape/std/boolean.fs", version : "");
@@ -18,7 +18,6 @@ import(path : "onshape/std/query.fs", version : "");
 import(path : "onshape/std/sheetMetalAttribute.fs", version : "");
 import(path : "onshape/std/sheetMetalUtils.fs", version : "");
 import(path : "onshape/std/surfaceGeometry.fs", version : "");
-import(path : "onshape/std/topologyUtils.fs", version : "");
 import(path : "onshape/std/units.fs", version : "");
 import(path : "onshape/std/valueBounds.fs", version : "");
 
